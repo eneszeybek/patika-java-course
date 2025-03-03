@@ -7,9 +7,9 @@ public class ChineseZodiac {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Doğum yılınızı giriniz: ");
-        int yOb = scanner.nextInt();
+        int yearOfBirth = scanner.nextInt();
 
-        String chineseZodiac = switch (yOb % 12){
+        String chineseZodiac = switch (yearOfBirth % 12){
             case 0 -> "Maymun";
             case 1 -> "Horoz";
             case 2 -> "Köpek";
