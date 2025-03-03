@@ -1,4 +1,4 @@
-package Practice1;
+package Practice;
 
 public class SwapNumbers {
     public static void main(String[] args) {

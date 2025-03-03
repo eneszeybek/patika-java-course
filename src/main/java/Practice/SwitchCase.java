@@ -1,4 +1,4 @@
-package Practice1;
+package Practice;
 
 public class SwitchCase {
     public static void main(String[] args) {
