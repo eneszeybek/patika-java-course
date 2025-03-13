@@ -13,5 +13,7 @@ public class MathRound {
         System.out.println("Aşağı yuvarlanmış hali: " + (int)Math.floor(number));
         System.out.println("En yakın tamsayı: " + Math.round(number));
 
+        scanner.close();
+
     }
 }
