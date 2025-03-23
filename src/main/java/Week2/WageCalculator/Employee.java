@@ -2,17 +2,21 @@ package Week2.WageCalculator;
 
 public class Employee  {
 
+    //Constructor method parametreleri
     private String name;
     private double salary;
     private int workHours;
     private int hireYear;
 
+    //Constructor method tanımlama
     public Employee(String name, double salary, int workHours, int hireYear){
         this.name = name;
         this.salary = salary;
         this.workHours = workHours;
         this.hireYear = hireYear;
     }
+
+    //Vergi hesaplama metodu
     public double tax(){
         if(salary<1000){
             return 0;
@@ -21,6 +25,7 @@ public class Employee  {
             return salary*0.03;
         }
     }
+    //Ekstra ücret hesaplama metodu
     public int bonus(){
         if(workHours>40){
             return 30*(workHours-40);
@@ -29,6 +34,8 @@ public class Employee  {
             return 0;
         }
     }
+
+    //Maaş artışı hesaplama metodu
     public double raiseSalary(){
         double raise = 0;
         if(2025-hireYear < 10){
@@ -41,6 +48,8 @@ public class Employee  {
         }
         return salary*raise;
     }
+
+    //Ekrana yazdırmak için toString metodu
     public String toString(){
         double taxAmount = tax();
         int bonusAmount = bonus();
