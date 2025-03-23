@@ -18,7 +18,7 @@ public class ClosestNumbers {
             else numbersList.add(j);
         }
 
-        //Listeyi ekrana yazdırma
+        //Listeyi yazdırma
         System.out.println("Oluşturulan 10 Sayılık Liste:\n" + numbersList);
 
         //En küçük farkı bulup bu sayıların indexini tutma
