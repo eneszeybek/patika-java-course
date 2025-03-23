@@ -1,6 +1,7 @@
 package Week3;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -18,15 +19,21 @@ public class LetterRepetition {
 
         for (int i=0; i<word.length(); i++){
             Character letter = word.charAt(i);
-            Integer counter = 1;
 
             if(letterRepetition.containsKey(letter)){
                 letterRepetition.replace(letter, letterRepetition.get(letter) + 1);
             }
             else{
-                letterRepetition.put(letter, counter);
+                letterRepetition.put(letter, 1);
             }
         }
-        System.out.println(letterRepetition);
+
+        Iterator<Character> iterator = letterRepetition.keySet().iterator();
+
+        while (iterator.hasNext()){
+            Character c = iterator.next();
+            Integer i = letterRepetition.get(c);
+            System.out.println(c + " = " + i);
+        }
     }
 }
